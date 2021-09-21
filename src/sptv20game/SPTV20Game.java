@@ -21,6 +21,7 @@ public class SPTV20Game {
         //программа загадывает число и просит пользователя отгадать
         //если пользователь угадал, он выйграл
         //иначе пользователь проиграл
+      
         int max = 5, min = 0, attempt= 1;
         Random random = new Random();
         int gameNum = random.nextInt (max - min +1) + min;
@@ -41,5 +42,7 @@ public class SPTV20Game {
             attempt++;
     
         }
+        System.out.println("Введите \"exit\" для выхода или любой символ для продолжения игры: ");
+        int exit = scanner.nextInt();
     }
 }
